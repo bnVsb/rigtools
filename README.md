@@ -18,7 +18,7 @@ $ npm start
 - Then click on the gray box twice
 
 ## Hartools
-[crossjbly](https://github.com/crossjbly/), and a few friends had figured out how to still use rigtools post-rigtools patch on 129-132 **if javascript is unblocked** through the use of http archive files, aka `.har` files. 
+[crossjbly](https://github.com/crossjbly/), and a few friends had figured out how to still use rigtools post-rigtools patch on 129-132 **if javascript:// URLs are unblocked** through the use of http archive files, aka `.har` files. If javascript:// URLs are **Blocked** this method only works until version 128 (patched **on** 129).
 1. Download the latest `.har` file from the [releases page](https://github.com/t3m1n4l/rigtools-updated-ui/releases/latest/)
 2. Get the `.har` file onto the device you want to run the devtools XSS on
 3. On the device you want to run the devtools XSS on go to `devtools://devtools/bundled/inspector.html`
@@ -48,9 +48,12 @@ $ npm start
   - Script passed to extension to run code, such as disabling extensions.
 - Chrome URLs
   - Elevated URLs that have extra access to features such as WebUI.
-  - Only modify the entrypoint when necessary. If not modified properly, thigns such as the updater will break, do not remove any buttons and reuse ids.
+  - Only modify the entrypoint when necessary. If not modified properly, things such as the updater will break, do not remove any buttons and reuse ids.
 
 ## Release information
+- Release 2.1.0
+  - This release contains the following things
+    - Experimental ChromeVox payload
 - Release 2.0.0
   - This release contains the following things
     - `.har` file exploit furthering the use of rigtools in newer chrome versions
