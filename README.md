@@ -49,6 +49,10 @@ $ npm start
 - Chrome URLs
   - Elevated URLs that have extra access to features such as WebUI.
   - Only modify the entrypoint when necessary. If not modified properly, things such as the updater will break, do not remove any buttons and reuse ids.
+- ChromeVox hijacking (EXPERIMENTAL, BETA)
+  - Devtools payload (script ran by devtools://devtools to create an iframe to chromevox's logging page and run the entry script)
+  - ChromeVox entry payload (script injected into the logging page to create the files for the evaluations page)
+  - ChromeVox evaluations page (page that allows executing code as chromevox with access to private API's like accessibilityPrivate or settingsPrivate)
 
 ## Release information
 - Release 2.1.0
