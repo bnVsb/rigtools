@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.mjs",
     "har-build": "node har.js",
-    "build": "npm install && node index.mjs",
+    "build": "npm install",
     "kill": "lsof -t -i :8080 | xargs kill -9"
   },
   "author": "FWSmasher",
